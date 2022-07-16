@@ -1,0 +1,42 @@
+@import "../../global.scss";
+
+.cart {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: $primary-clr;
+  position: relative;
+
+  .cart-icon {
+    font-size: 2.6rem;
+    align-self: center;
+  }
+
+  .cart-quantity {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -4px;
+    right: -6px;
+  }
+
+  &.empty-cart {
+    color: $primary-clr;
+    background-color: transparent;
+
+    .cart-quantity {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.blog {
+  width: 380px;
+  margin: 0 auto 3em;
+
+  .img-container {
+    width: 355px;
+    height: 200px;
+
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: red;
+
+    .img {
+      width: 380px;
+      transition: all 0.4s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.4s ease;
+      }
+    }
+  }
+
+  .info {
+    width: 355px;
+
+    .date {
+      font-size: 1.4rem;
+      color: #777;
+      margin-top: 1em;
+    }
+
+    .blog-header {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0.4em 0;
+    }
+
+    .blog-description {
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.footer {
+  background-color: #262626;
+  color: #eee;
+  padding: 2em 0 6em;
+
+  .footer-container {
+    display: flex;
+
+    .links {
+      flex: 1;
+      .header,
+      .delivery,
+      .contact {
+        font-weight: 500;
+        font-size: 1.6rem;
+        margin: 1em 0;
+      }
+
+      .header {
+        display: flex;
+        align-items: flex-end;
+
+        .icon {
+          margin-right: 0.5em;
+          font-size: 1.8rem;
+        }
+      }
+
+      .contact {
+        width: 50%;
+
+        small {
+          font-weight: 400;
+        }
+      }
+
+      .link {
+        font-size: 1.3rem;
+        margin-top: 0.8em;
+        cursor: pointer;
+      }
+    }
+  }
+}
